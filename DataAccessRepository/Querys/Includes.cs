@@ -11,6 +11,5 @@ namespace DataAccessRepository.Querys
         }
 
         public Func<IQueryable<TEntity>, IQueryable<TEntity>> Expression { get; private set; }
-
     }
 }

@@ -2,8 +2,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DataAccessRepository.UoW
 {
@@ -34,7 +32,7 @@ namespace DataAccessRepository.UoW
                 var uow = new UnitOfWork(_context, _serviceProvider);
                 return uow;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
                 throw;

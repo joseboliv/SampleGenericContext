@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Reflection;
-using System.Text;
 
 namespace DataAccessRepository.Options
 {
@@ -31,8 +29,8 @@ namespace DataAccessRepository.Options
             if (host == null) throw new ArgumentNullException(nameof(host), $"{nameof(host)} is null.");
             if (dbname == null) throw new ArgumentNullException(nameof(dbname), $"{nameof(dbname)} is null.");
 
-            if (host.Trim() == String.Empty) throw new ArgumentException($"{nameof(host)} is empty.", nameof(host));
-            if (dbname.Trim() == String.Empty) throw new ArgumentException($"{nameof(dbname)} is empty.", nameof(dbname));
+            if (host.Trim() == string.Empty) throw new ArgumentException($"{nameof(host)} is empty.", nameof(host));
+            if (dbname.Trim() == string.Empty) throw new ArgumentException($"{nameof(dbname)} is empty.", nameof(dbname));
         }
 
         public override string ToString()
